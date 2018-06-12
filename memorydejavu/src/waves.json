@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Outer Banks",
+    "image": "https://cdn.shopify.com/s/files/1/1087/6474/files/Screen_Shot_2016-07-08_at_3.10.28_PM_1024x1024.png?17939566392017699542",
+    "clicked": false
+  },
+  {
+    "id": 2,
+    "name": "Jaws (Pe'ahi)",
+    "image": "https://thumb.grindnetworks.com/EDeRENaYZwAuhOnktQ7Rzw23KUE=/980x0/filters:format(jpg):quality(80):max_bytes(500000):sharpen(0.2%2C1%2Cfalse):strip_exif():strip_icc()/https://www.adventuresportsnetwork.com/wp-content/uploads/2016/01/AGoldKuda-Shots.jpg",
+    "clicked": false
+},
+  {
+    "id": 3,
+    "name": "Nazare",
+    "image": "https://www.surfertoday.com/images/stories/rodrigokoxanazare.jpg",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "name": "Cloudbreak",
+    "image": "https://cdn.adventuresportsnetwork.com/uploads/gallery/cloudbreak-photo-gallery/Cloudbreak151.JPG",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "name": "Shipsterns",
+    "image": "https://thesidewedge.files.wordpress.com/2013/03/m-matbar.jpg?w=1800",
+    "clicked": false
+  },
+  {
+    "id": 6,
+    "name": "Bells Beach",
+    "image": "https://shyllep.files.wordpress.com/2012/04/jeff-rowley-bells-pics-steve-ryan0879.jpg?w=919&h=&zoom=2",
+    "clicked": false
+  },
+  {
+    "id": 7,
+    "name": "Jeffreys Bay",
+    "image": "https://image.redbull.com/rbcom/010/2016-11-02/1331827066863_1/0010/1/1650/1100/1/mfeb-styling-j-bay.jpg",
+    "clicked": false
+  },
+  {
+    "id": 8,
+    "name": "Chicama",
+    "image": "http://theamplified.net/wp-content/uploads/2014/06/Chicama-Peru.jpg",
+    "clicked": false
+  },
+  {
+    "id": 9,
+    "name": "Virgina Beach",
+    "image": "http://www.surf-forecast.com/system/images/14476/large/Virginia-Beach.jpg?1440396686",
+    "clicked": false
+  },
+  {
+    "id": 10,
+    "name": "Sebastian Inlet",
+    "image": "http://www.surfer.com/wp-content/uploads/2017/01/SheaFirst1_mez-Version-2.jpg",
+    "clicked": false
+  },
+  {
+    "id": 11,
+    "name": "Mavericks",
+    "image": "https://assets3.thrillist.com/v1/image/2255324/size/sk-2017_04_article_main_desktop_2x.jpg",
+    "clicked": false
+  },
+  {
+    "id": 12,
+    "name": "Todos Santos",
+    "image": "https://assets3.thrillist.com/v1/image/2255331/size/sk-2017_04_article_main_desktop_2x.jpg",
+    "clicked": false
+  },
+  {
+    "id": 13,
+    "name": "Trestles",
+    "image": "https://assets3.thrillist.com/v1/image/2255331/size/sk-2017_04_article_main_desktop_2x.jpg",
+    "clicked": false
+  },
+  {
+    "id": 14,
+    "name": "Pipeline",
+    "image": "https://www.surfingmagazine.com/wp-content/blogs.dir/1/files/2012/04/KironCootsPipe01-08-12-2456-1000x666.jpg",
+    "clicked": false
+  },
+  {
+    "id": 15,
+    "name": "Waimea",
+    "image": "https://i2.wp.com/www.goodbrine.com/wp-content/uploads/2017/08/TerryHoustonphotoEmilyErickson-e1504169485730.jpg?w=1140",
+    "clicked": false
+  }
+]
