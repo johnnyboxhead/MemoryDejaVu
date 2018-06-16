@@ -23,12 +23,8 @@ function shuffleArray(array) {
   return array;
 }
 
-function restartApp(array){
-  array.map(wave => {
-    wave.clicked ===false
-  })
-  return array;
-}  
+
+
 
 class App extends Component {
   state = {
@@ -48,13 +44,17 @@ class App extends Component {
     this.setState({ waves });
   };
 
+  restartApp = array => {
+    this.setState({waves: this.state.waves.map(wave => wave.clicked === false)});
+  }
+  
+
   render() {
     const shuffledWaves = shuffleArray(waves);
-    const restartWaves = restartApp(waves)
     return (
       <Wrapper>
         <Title>{titleMessage}</Title>
-        <Restart>Restart</Restart>
+        <Restart restartWaves={this.restartApp}>Restart</Restart>
         {shuffledWaves.map(wave => (
           <Wave
             randomWave={this.randomWave}
