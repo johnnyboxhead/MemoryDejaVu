@@ -4,7 +4,7 @@ import "./Wave.css";
 const Wave = props => (
     <div className="card">
       <div className="img-container">
-        <img alt={props.name} src={props.image} />
+        <img alt={props.name} src={props.image} onClick={() => props.selectWave(props.id)} className="remove"/>
       </div>
       <div className="content">
         <ul>
@@ -13,9 +13,6 @@ const Wave = props => (
           </li>
         </ul>
       </div>
-      <span onClick={() => props.selectWave(props.id)} className="remove">
-        𝘅
-      </span>
     </div>
   );
   

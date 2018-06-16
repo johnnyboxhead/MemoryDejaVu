@@ -5,6 +5,8 @@ import Wave from "./components/Wave"
 import waves from "./waves.json"
 import Wrapper from "./components/Wrapper"
 import Title from "./components/Title"
+import Restart from "./components/Restart"
+let titleMessage = "100% pure adrenaline!"
 
 // let randomWave = Math.floor(Math.random() * waves.length)
 // console.log(randomWave)
@@ -21,6 +23,13 @@ function shuffleArray(array) {
   return array;
 }
 
+function restartApp(array){
+  array.map(wave => {
+    wave.clicked ===false
+  })
+  return array;
+}  
+
 class App extends Component {
   state = {
     waves
@@ -30,7 +39,7 @@ class App extends Component {
     this.state.waves.map(wave => {
       if (wave.id === id){
         if (wave.clicked === true) {
-          console.log("Game Over")
+          titleMessage = "Game Over, Brah"
         }
         wave.clicked = true
       }
@@ -39,13 +48,13 @@ class App extends Component {
     this.setState({ waves });
   };
 
-    
-
   render() {
     const shuffledWaves = shuffleArray(waves);
+    const restartWaves = restartApp(waves)
     return (
       <Wrapper>
-        <Title>Friends List</Title>
+        <Title>{titleMessage}</Title>
+        <Restart>Restart</Restart>
         {shuffledWaves.map(wave => (
           <Wave
             randomWave={this.randomWave}
@@ -64,20 +73,41 @@ class App extends Component {
 
 export default App;
 
+//--Working code, testing with code above--/
+// selectWave = id => {
+//   this.state.waves.map(wave => {
+//     if (wave.id === id){
+//       if (wave.clicked === true) {
+//         console.log("Game Over")
+//       }
+//       wave.clicked = true
+//     }
+//   })
 
-//   render() {
-//     return (
-//       <div className="App">
-//         <header className="App-header">
-//           <img src={logo} className="App-logo" alt="logo" />
-//           <h1 className="App-title">Welcome to React</h1>
-//         </header>
-//         <p className="App-intro">
-//           To get started, edit <code>src/App.js</code> and save to reload.
-//         </p>
-//       </div>
-//     );
-//   }
+//   this.setState({ waves });
+// };
+
+  
+
+// render() {
+//   const shuffledWaves = shuffleArray(waves);
+//   return (
+//     <Wrapper>
+//       <Title>Friends List</Title>
+//       {shuffledWaves.map(wave => (
+//         <Wave
+//           randomWave={this.randomWave}
+//           selectWave={this.selectWave}
+//           id={wave.id}
+//           key={wave.id}
+//           name={wave.name}
+//           image={wave.image}
+//           clicked={wave.clicked}
+//         />
+//       ))}
+//     </Wrapper>
+//   );
+// }
 // }
 
 // export default App;

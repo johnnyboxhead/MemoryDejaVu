@@ -1,0 +1,26 @@
+/* .restart {
+  padding-top: 5px;
+  background: #ECEFF1;
+  height: 20px;
+  width: 200px;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0px;
+  justify-content: space-around;
+  align-content: flex-start;
+  overflow: auto;
+  border: red solid 5px;
+  text-align: center;
+} */
+.restart {
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  text-align: center;
+  font-size: 3rem;
+  /* text-decoration: underline; */
+  color: #2A77AE;
+  margin-bottom: 50px;
+  background-color: lightgray;
+  box-shadow: 0 2px 4px #999, 0 2px 4px #999, 0 2px 4px #999
+}
