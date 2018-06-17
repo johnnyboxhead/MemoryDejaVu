@@ -6,7 +6,10 @@ import waves from "./waves.json"
 import Wrapper from "./components/Wrapper"
 import Title from "./components/Title"
 import Restart from "./components/Restart"
+import Scores from "./components/Scores"
 let titleMessage = "100% pure adrenaline!"
+let gameScore = 0
+let highScore = 0
 
 // let randomWave = Math.floor(Math.random() * waves.length)
 // console.log(randomWave)
@@ -34,10 +37,15 @@ class App extends Component {
   selectWave = id => {
     this.state.waves.map(wave => {
       if (wave.id === id){
+        gameScore ++
         if (wave.clicked === true) {
           titleMessage = "Game Over, Brah"
+          gameScore = 0
         }
         wave.clicked = true
+        if(gameScore>highScore){
+          highScore = gameScore;
+        }
       }
     })
 
@@ -45,7 +53,9 @@ class App extends Component {
   };
 
   restartApp = array => {
-    this.setState({waves: this.state.waves.map(wave => wave.clicked === false)});
+    gameScore = 0;
+    this.setState({waves: this.state.waves.map(wave => wave.clicked = false)});
+    titleMessage = "100% pure adrenaline!"
   }
   
 
@@ -54,6 +64,7 @@ class App extends Component {
     return (
       <Wrapper>
         <Title>{titleMessage}</Title>
+        <Scores>Your Score: {gameScore} High Score: {highScore}</Scores>
         <Restart restartWaves={this.restartApp}>Restart</Restart>
         {shuffledWaves.map(wave => (
           <Wave
